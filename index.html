@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <title>Sam&#39;s Flash Card App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="./flashcard.png"/>
+</head>
+<body>
+    <div class="container">
+        <h1 class="app-title">Sam&#39;s Flash Card App &#x1F913;&#x1F4DA;</h1>
+        <div class="button-group">
+            <button id="addCard" class="add-button">Create New Card</button>
+        </div>
+        <div class="button-row">
+            <button class="randomizeCards">Shuffle</button>
+            <button id="checkScore" class="score-button">Score</button>
+            <button id="resetAll" class="score-button">Reset Cards</button>
+         </div>
+        <div class="flashcards" id="flashcards" aria-live="polite">
+            <!-- Flashcards will be dynamically generated here -->
+        </div>
+        <div>
+            <button id="deleteAll" class="delete-button">Delete All</button>
+            <footer>&copy; DevManSam 
+                <span>
+                    <script>
+                        const date = new Date();
+                        document.write(date.getFullYear());
+                    </script>
+                    </span>
+            </footer>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
